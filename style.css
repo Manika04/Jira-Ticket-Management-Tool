@@ -1,0 +1,162 @@
+*{
+    /*To include margin, padding and border while defining height and width of an element we use box-sizing */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    padding: 0;
+}
+
+.toolbox-cont{
+    background-color: #464646;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-cont>*{
+    margin-left: 4rem;
+    border-radius: 3px;
+}
+
+.toolbox-priority-cont{
+    background-color: #3d3d3d;
+    height: 3.5rem;
+    width: 18rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.color{
+    border-radius: 3px;
+    width: 3rem;
+    height: 2rem;
+}
+
+.color:hover{
+    height: 2.2rem;
+    width: 3.2rem;
+    box-shadow: 3px 3px #504f4f;
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+
+.action-btn-cont{
+    background-color: #3d3d3d;
+    height: 3.5rem;
+    width: 7rem;
+    display: flex;
+}
+
+.action-btn-cont>*:hover{
+    background-color: #485460;;
+    cursor: pointer;
+}
+
+.add-btn, .remove-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 50%;
+    color: #d1d8e0
+}
+
+
+/* Modal Container  */
+.model-cont{
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute; /*It becomes an independent element */
+    /*calc container ki bhi height le leta hai and phir position karta hai isliye to get the element in center we have to subtract the element height*/
+    top: calc((100vh - 50vh)/2);
+    left: calc((100vw - 45vw)/2);
+    display: none;
+}
+
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    outline: none; /*Click karne pe border nhi aayega*/
+    border: none;
+    background-color:#dfe4ea;
+    resize: none;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #4b4b4b;
+}
+
+.priority-color{
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 4rem;
+}
+
+.active{
+    border: 5px solid white;
+}
+
+
+/* Ticket Container */
+.main-cont{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.ticket-cont{
+    background-color: #f1f2f6;
+    height: 12rem;
+    width: 15rem;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    font-size: 0.8rem;
+    background-color:#e0e0e0;
+}
+
+.task-area{
+    height: calc(100% - 1rem - 2rem - 2rem);
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+    word-wrap: break-word; /*overflow-wrap: break-word*/
+}
+
+.ticket-lock{
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do's List</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome cdn se bina kit ke ho jayega -->
+    <script src="https://kit.fontawesome.com/a896e02f86.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="toolbox-cont">
+        <div class="toolbox-priority-cont">
+            <div class="color lightpink"></div>
+            <div class="color lightblue"></div>
+            <div class="color lightgreen"></div>
+            <div class="color black"></div>
+        </div>
+
+        <div class="action-btn-cont">
+            <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
+            <div class="remove-btn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+
+    <!-- Modal container -->
+    <div class="model-cont">
+        <textarea class="textarea-cont" placeholder="Enter Your Task" spellcheck="false"></textarea>
+
+        <div class="priority-colors-cont">
+            <div class="priority-color lightpink"></div>
+            <div class="priority-color lightblue"></div>
+            <div class="priority-color lightgreen"></div>
+            <div class="priority-color black active"></div>
+        </div>
+    </div>
+
+    <!-- ticket container -->
+    <div class="main-cont">
+    </div>
+
+</body>
+<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+<script src="./script.js"></script>
+</html>
