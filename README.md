@@ -1,5 +1,5 @@
 # Jira-Ticket-Management-Tool
-It is an advanced To Do's List where one can set priority of thier task by assigning a particular color to the task. 
+It is an advanced To Do's List where one can set priority of their task by assigning a particular color to the task. 
 
 **HOW TO ADD A TASK?** \
 One can add a task by clicking on the plus(+) button and then a box will appear where one can write their task and choose a priority color. Press SHIFT to add the task.
